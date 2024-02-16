@@ -1,0 +1,85 @@
+.adoptFriend {
+    margin-top: 70px;
+}
+
+.adoptPartner {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 100px 0;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/wallpapers%2Fdog-wallpaper.png?alt=media&token=dbf21c7a-1ed8-4781-af9a-1bd9cafc0861');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.adoptPainel {
+    display: flex;
+    height: 100%;
+}
+
+.adoptInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.adoptInfo h1 {
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.adoptImage {
+    width: 50%;
+}
+
+.adoptImage img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.buttonPartner a {
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid #111;
+    color: #111;
+    font-weight: 500;
+    border-radius: 200px;
+    transition: .5s;
+}
+
+.buttonPartner a:focus {
+    color: white;
+    background-color: #111;
+}
+
+@media screen and (max-width: 720px) { 
+    .adoptPainel {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .adoptInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+    }
+    .adoptImage {
+        width: 100%;
+    }
+    
+}

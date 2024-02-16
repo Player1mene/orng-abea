@@ -1,0 +1,123 @@
+.aboutus {
+    margin-top: 70px;
+}
+
+.aboutInfo {
+    padding: 100px 2%;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/wallpapers%2Fdog-wallpaper.png?alt=media&token=dbf21c7a-1ed8-4781-af9a-1bd9cafc0861');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+}
+
+.aboutSingle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.aboutSingle .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.aboutSingle .infos h1 {
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.aboutSingle .infos p {
+    color: #3D3D3D;
+}
+
+.aboutSingle img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ownersSingle {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.ownersSingle h1 {
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.owners {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.owner {
+    padding: 0 19px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 114px;
+    background: #FFF2A8;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ownerInfo h3 {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.owner img {
+    width: 94px;
+    height: 94px;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .aboutSingle {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        align-items: center;
+    }
+
+
+    .owners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+
+    .owners {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}
+

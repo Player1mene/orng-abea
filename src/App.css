@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Margarine&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+}
+
+
+
+html,
+body {
+    background: #fff;
+    scroll-behavior: smooth;
+}
+
+.margarine {
+    font-family: 'margarine';
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width:  1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.containerWrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.website {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/wallpapers%2Fdog-wallpaper.png?alt=media&token=dbf21c7a-1ed8-4781-af9a-1bd9cafc0861');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.animeLeft {
+    animation: animeLeft .5s forwards;
+    transition: .5s;
+}
+
+.animeBottom {
+    animation: animeBottom .5s forwards;
+    transition: .5s;
+}
+
+.pagina {
+    z-index: 1;
+    background-color: #111;
+    color: white !important;
+}
+
+.pagina::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 19px;
+    height: 19px;
+    border-radius: 30px;
+    background: #111;
+    border-radius: 100px;
+    animation: bar .4s forwards;
+    box-shadow: 0px 18px 0px 0px #111;
+}
+
+.pagina::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 19px;
+    height: 19px;
+    border-radius: 30px;
+    background: #111;
+    border-radius: 100px;
+    animation: bar .4s forwards;
+    box-shadow: 0px 18px 0px 0px #111;
+}
+
+@keyframes bar {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: initial;
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 1193px){
+
+    
+.pagina {
+    z-index: 1;
+    background-color: transparent;
+    color: black !important;
+}
+
+.pagina::after {
+    display: none;
+}
+
+.pagina::before {
+    display: none;
+}
+
+}
+
+@keyframes animeLeft {
+    from {
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    to {
+        transform: initial;
+        opacity: 1;
+    }
+}
+
+@keyframes animeBottom {
+    from {
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+    to {
+        transform: initial;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    .container {
+      padding: 0 2% !important;
+    }
+
+}

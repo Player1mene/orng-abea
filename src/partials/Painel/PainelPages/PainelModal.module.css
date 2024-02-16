@@ -1,0 +1,239 @@
+.modal {
+
+    z-index: 1006;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.formModal {
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shower .5s forwards;
+    transition: .5s;
+}
+
+.formModal .formWrapper {
+    position: relative;
+    align-self: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.form {
+    width: 100%;
+}
+
+.imageDog {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.formModal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@keyframes shower {
+    from {
+        opacity: 0;
+    }
+    to {
+        transform: initial;
+        opacity: 1;
+    }
+}
+
+
+
+
+.laber {
+    padding-top: 10px;
+    padding-bottom: 5px;
+	font-size: 20px;
+	color: #111;
+}
+
+
+.formTextarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+	width: 100%;
+	padding: 15px 20px;
+	color: #474747;
+	border-radius: 8px;
+	background: #DDD;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 0;
+    height: 100px;
+    resize: none;
+	font-size: 16px;
+	outline:0;
+}
+
+
+.dogName {
+    z-index: 1100;
+    padding: 5px 40px;
+    background-color: #FFF;
+    color: #111 !important;
+    border-radius: 200px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.dogName::after {
+    content: '';
+    z-index: 1090;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: #FFF;
+    border-radius: 100px;
+    animation: bar .4s forwards;
+    box-shadow: 0px 30px 0px 0px #FFF;
+}
+
+.dogName::before {
+    content: '';
+    z-index: 1090;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #FFF;
+    border-radius: 100px;
+    animation: bar .4s forwards;
+    box-shadow: 0px 30px 0px 0px #FFF;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.loading i {
+    color: #242218;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300px;
+    background-color: #FFF2A8;
+    font-size: 60px;
+}
+
+.loading p {
+    padding: 0 30px;
+    color: #242218;
+    font-size: 18px;
+    text-align: center;
+    font-weight: initial;
+}
+
+.fecharPopup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 100px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+}
+
+.fecharPopup i {
+    width: initial;
+    height: initial;
+    background: transparent !important;
+    font-size: 30px !important;
+}
+
+
+.fecharPopup:hover {
+    background-color: #d8d8d8;
+
+}
+
+
+@media  screen and (max-width: 916px) {
+
+
+
+    .formModal {
+        width: 90vw;
+        height: 90vh;
+        background-color: white;
+        border-radius: 30px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        animation: shower .5s forwards;
+        transition: .5s;
+    }
+
+    .formModal .formWrapper {
+        grid-row: 2;
+        position: relative;
+        align-self: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: auto;
+        padding: 50px 20px;
+    }
+    
+    .imageDog {
+        grid-row: 1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+
+    
+}

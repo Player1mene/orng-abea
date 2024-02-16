@@ -1,0 +1,39 @@
+.painelLogin {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	height: 100vh;
+	background: #FFF7CD;
+}
+
+
+
+
+.dogImage{
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/formImg%2FformDog.jpg?alt=media&token=74ee2436-2169-4f7e-a370-617ff8513798');
+}
+
+
+@media screen and (max-width: 1145px) {
+
+	.painelLogin {
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		background: #FFF7CD;
+		background-position: center;
+		background-size: cover;
+		background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/formImg%2FformDog.jpg?alt=media&token=74ee2436-2169-4f7e-a370-617ff8513798');	
+	}
+
+	.dogImage {
+		display: none;
+	}
+
+	
+}
+

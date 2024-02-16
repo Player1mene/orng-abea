@@ -1,0 +1,35 @@
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+    color: #3D3D3D;
+    border-radius: 10px;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.dropDown .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-content: center;
+    z-index: 1;
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.dropDown .info {
+    z-index: 0;
+    padding: 20px;
+    transition: .5s;
+}
+
+.dropUp .info {
+    padding: 0 20px;
+    height: 0;
+    transform: translateY(-200px);
+}

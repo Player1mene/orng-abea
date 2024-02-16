@@ -1,0 +1,88 @@
+.turnPartner {
+    margin-top: 70px;
+}
+
+.partnerModal {
+    padding: 70px 2%;
+}
+
+.modalWrapper {
+    min-height: 90vh;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.modalWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+}
+
+.modalInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 70px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalInfo h1 {
+    font-weight: normal;
+}
+
+.modalInfo p {
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+.buttons a {
+	padding: 10px 20px;
+	background-color: rgb(247, 226, 126);
+	color: rgb(109, 100, 56);
+	box-shadow: 0px 0px 0px 2px rgb(247, 226, 126);
+	border: 2px solid rgb(247, 226, 126);
+	outline: 0;
+	border-radius: 10px;
+    text-decoration: none;
+	font-weight: 400;
+	text-align: center;
+	font-size:20px;
+	cursor: pointer;
+}
+
+
+@media screen and (max-width: 730px) {
+
+    .modalWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .modalInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 70px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modalWrapper img {
+        display: none;
+    }
+    
+}

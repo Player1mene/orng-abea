@@ -1,0 +1,52 @@
+.adoptContent {
+    width: 100%;
+    max-height: calc(100% - 75px);
+    padding: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: transparent;
+    scrollbar-width: thin;
+    scrollbar-color: #CBCC64 #B6BEC0;
+}
+
+  /* Chrome, Edge and Safari */
+  .adoptContent::-webkit-scrollbar {
+    height: 11px;
+    width: 11px;
+  }
+  .adoptContent::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #B6BEC0;
+  }
+  
+  .adoptContent::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  .adoptContent::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  .adoptContent::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #CBCC64;
+  }
+  
+  .adoptContent::-webkit-scrollbar-thumb:hover {
+    background-color: #CBCC64;
+  }
+  
+  .adoptContent::-webkit-scrollbar-thumb:active {
+    background-color: #CBCC64;
+  }
+  
+  
+
+
+.adoptWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}

@@ -1,0 +1,180 @@
+.donationPainel {
+    width: 100%;
+    border-radius: 20px;
+    height: calc(100% - 1px);
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.PainelDonationWrapper {
+    padding: 5px 0;
+    height: calc(100% - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form {
+    position: relative;
+    width: 50%;
+    height: calc(100% - 1px);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.laber {
+    padding-top: 10px;
+    padding-bottom: 5px;
+	font-size: 20px;
+	color: #111;
+}
+
+.formTextarea {
+    margin-top: 5px;
+    margin-bottom: 10px;
+	width: 100%;
+	padding: 15px 20px;
+	color: #474747;
+	border-radius: 8px;
+	background: #DDD;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+	border: 0;
+    height: 100px;
+    resize: none;
+	font-size: 20px;
+	outline:0;
+}
+
+.donationValue h1{
+    color: #000;    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.donationImage {
+    width: 50%;
+    height: 100%;
+    background-image: url('https://cdn.discordapp.com/attachments/1145023690195603598/1187507656592728214/337bc1e676427fe7b3557770c81e360e.png?ex=659723b0&is=6584aeb0&hm=8d852a86880fc15be66bd3ea30f3da3fd9c9d7e6000f7fb557596f73c2183995&');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.loading i {
+    color: #242218;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300px;
+    background-color: #FFF2A8;
+    font-size: 60px;
+}
+
+.loading p {
+    padding: 0 30px;
+    color: #242218;
+    font-size: 18px;
+    text-align: center;
+    font-weight: initial;
+}
+
+.fecharPopup {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 100px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+}
+
+.fecharPopup i {
+    width: initial;
+    height: initial;
+    background: transparent !important;
+    font-size: 30px !important;
+}
+
+
+.fecharPopup:hover {
+    background-color: #d8d8d8;
+
+}
+
+
+@media screen  and (max-width: 830px){
+
+    
+    .PainelDonationWrapper {
+        padding: 30px 0;
+        height: auto;
+        display: flex;
+        height: 160vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .donationPainel {
+        width: 100%;
+        border-radius: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    .form {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 1px);
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .donationImage {
+        width: 100%;
+        height: 100%;
+        background-image: url('https://cdn.discordapp.com/attachments/1145023690195603598/1187507656592728214/337bc1e676427fe7b3557770c81e360e.png?ex=659723b0&is=6584aeb0&hm=8d852a86880fc15be66bd3ea30f3da3fd9c9d7e6000f7fb557596f73c2183995&');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+}

@@ -1,0 +1,25 @@
+.loading {
+    z-index: 1002;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    align-content: center;
+    justify-content:center;
+    height: 100vh;
+    text-align: center;
+    background-color: #FFF7CB;
+}
+
+.loading i {
+    color: rgb(53, 49, 31);
+    font-size: 60px;
+}
+
+.loading p {
+    color: rgb(53, 49, 31);
+}

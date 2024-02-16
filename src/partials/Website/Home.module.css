@@ -1,0 +1,244 @@
+        .home {
+            margin-top: 70px;
+        }
+        
+        .presentation {
+            width: 100%;
+            height: 100vh;
+            background-color: #FFF7CB;
+            overflow: hidden;
+        }
+        
+        .abeaIcon {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            gap: 20px;
+            font-size: 128px;
+            line-height: 120px;
+        }
+        
+        .abeaIcon i {
+            font-size: 100px;
+        }
+        
+        .infoButton p {
+            font-size: 2rem;
+            max-width: 670px;
+            padding-bottom: 20px;
+            text-align: left;
+        }
+        
+        .infoButton .buttonLink {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 400;
+            display: inline-flex;
+            padding: 5px 40px;
+            text-decoration: none;
+            border-radius: 200px;
+            background: #111;
+        }
+        
+        .dogImage {
+            width: 669px;
+            height: 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            -webkit-background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/home%2Fdog-home.png?alt=media&token=2ff067c2-cd1a-41f2-b773-6b9a0d1e1cca');
+        }
+        
+        .cards {
+            padding-top: 52px;
+            padding-bottom: 90px;
+        }
+        
+        .cards .cardTitle {
+            font-size: 32px;
+            padding-bottom: 52px;
+            font-weight: 500;
+        }
+        
+        .cardWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .aboutUs {
+            height: 700px;
+            background-color: #FFF7CB;
+        }
+
+        .aboutUsInfo {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            gap: 30px;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .aboutUsInfo p {
+            text-align: center;
+            max-width: 800px;
+            font-size: 20px;
+        }
+
+        .aboutUsInfo h1 {
+            text-align: center;
+            max-width: 1000px;
+            font-size: 64px;
+        }
+
+
+        .partner {
+            height: 710px;
+        }
+
+        .partnerInfo {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            gap: 30px;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .partnerInfo p {
+            text-align: center;
+            max-width: 800px;
+            font-size: 20px;
+        }
+
+        .partnerInfo h1 {
+            text-align: center;
+            max-width: 1000px;
+            font-size: 32px;
+        }
+
+
+        .cardsDog {
+            width: 100%;
+            background-color: #FFF7CB;
+            padding-top: 52px;
+            padding-bottom: 90px;
+        }
+        
+        .cardsDog .cardDogTitle {
+            font-size: 32px;
+            padding-bottom: 52px;
+            font-weight: 500;
+        }
+        
+        .cardDogsWrapper {
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+
+        @media screen and (max-width: 1193px){ 
+
+            .logoPress {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                background-image: url('https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/home%2Fdog-home.png?alt=media&token=2ff067c2-cd1a-41f2-b773-6b9a0d1e1cca');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 !important;
+            }
+
+               
+        .infoButton p {
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .containerWrapper {
+            background-color: #fff7cb52;
+        }
+
+            .presentation {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .abeaIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                font-size: 100px;
+                line-height: 120px;
+            }
+            
+            .abeaIcon i {
+                font-size: 70px;
+            }
+
+            
+    
+
+            .dogImage {
+                display: none;
+            }
+
+            .cardsDog {
+                width: 100%;
+                background-color: #FFF7CB;
+                padding: 50px 20px;
+            }
+
+            .cardDogsWrapper {
+                padding-top: 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            .cardDogsWrapper {
+                padding-top: 50px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+               
+            }
+            .cardWrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .cards {
+                padding: 52px 20px;
+            }
+        }
+
+
+        @media screen and (max-width: 678px) {
+            .container {
+                background-size: cover;
+            }
+
+        }
