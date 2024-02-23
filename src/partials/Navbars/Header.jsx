@@ -81,7 +81,7 @@ function Header() {
 
                     <div className={styles.logoWrapper}>
                         <Link to="/" className={`${styles.logo}`}>
-                            <img src="https://cdn.discordapp.com/attachments/1088120399478390897/1188587861289738240/image.png?ex=659b11b5&is=65889cb5&hm=eeb8af37c50a93898d4b0995c192edc85fce711a23f3e6e1d07f921078614546&" alt="" loading='lazy'/>
+                            <img src="https://firebasestorage.googleapis.com/v0/b/abea-project.appspot.com/o/logo%26icons%2Fimage%20(2).png?alt=media&token=134393c8-fbdf-4732-8bbe-aba8b2926051" alt="" loading='lazy'/>
                         </Link>
                     </div>    
                     
