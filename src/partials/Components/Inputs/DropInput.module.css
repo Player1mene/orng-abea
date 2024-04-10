@@ -1,7 +1,7 @@
 .dropDown {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     color: #3D3D3D;
     border-radius: 10px;
     transition: .5s;
@@ -18,7 +18,7 @@
     background-color: white;
     font-weight: bold;
     padding: 20px;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 
 }
 
